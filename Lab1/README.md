@@ -1,4 +1,4 @@
-# Lab 1 - SquareMatrix C#
+# Lab 1 - SquareMatrix
 
 ## Խնդրի դրածք և պահանջներ
 
