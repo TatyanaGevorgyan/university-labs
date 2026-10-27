@@ -28,16 +28,6 @@ using System;
         return Math.Sqrt((Math.Pow(Likes, 2) / Views));
     }
 
-    public override bool Equals(object? obj)
-    {
-        return base.Equals(obj);
-    }
-
-    public override int GetHashCode()
-    {
-        return base.GetHashCode();
-    }
-
     public override string ToString()
     {
         string yearFormatted = $"({Year})";
