@@ -1,6 +1,6 @@
 # Lab 3 - String, Formatting, Enum & Console Input
 
-##  Խնդրի դրվածք և պահանջներ
+##  Խնդրի պահանջներ
 
 * Movie.cs կլասի ստեղծում: 
   * Պարունակում է հետևյալ դաշտերը՝ Number (ֆիլմի համար), Title (ֆիլմի անուն), Year (տարեթիվ), MovieGenre (ֆիլմի ժանր՝ enum), Views (դիտումների քանակ), Likes (լայքերի քանակ)։
