@@ -1,6 +1,6 @@
 # Lab 2 - Method Overloading & Default Parameters
 
-## Խնդրի դրածք և պահանջներ
+## Խնդրի պահանջներ
 
 * Մեթոդի ստեղծում: Ստեղծել static ToMultiplicate մեթոդը 3 տարբերակով (overloading)։
 * Փոփոխականներ: Մեթոդները ընդունում են x և N փոփոխականները։
