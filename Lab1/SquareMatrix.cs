@@ -1,76 +1,67 @@
+
 using System;
+
 namespace ConsoleApp2
 {
     internal class SquareMatrix
     {
-        private int n;
-        private int a;
-        private int b;
+        public int N { get; set; }
+        public int A { get; set; }
+        public int B { get; set; }
+
         private int[,] matrix;
-        public int N
-        {
-            get => n;
-            set => n = value;
-           
 
-        }
-        public int A
-        {
-            get => a;
-            set => a = value;
-
-        }
-        public int B
-        {
-            get => b;
-            set => b = value;
-
-        }
         public SquareMatrix(int n, int a, int b)
         {
-            this.n = n;
-            this.a = a;
-            this.b = b;
+            N = n;
+            A = a;
+            B = b;
+
             FillMatrix();
         }
+
         private void FillMatrix()
         {
-            matrix = new int[n, n];
-            Random rand = new Random();
-            for(int i =0; i < n; i++)
-            {
-                for(int j = 0; j<n; j++)
-                {
-                    matrix[i, j] = rand.Next(a, b + 1);
+            matrix = new int[N, N];
+            Random random = new Random();
 
+            for (int i = 0; i < N; i++)
+            {
+                for (int j = 0; j < N; j++)
+                {
+                    matrix[i, j] = random.Next(A, B + 1);
                 }
             }
-
         }
+
         public void ShowMatrix()
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < N; i++)
             {
-                for (int j = 0; j < n; j++)
+                for (int j = 0; j < N; j++)
                 {
-                    Console.Write($"{matrix[i,j],4} ");
-
+                    Console.Write($"{matrix[i, j],4}");
                 }
+
                 Console.WriteLine();
             }
         }
+
         public int GetOddNumberCount()
         {
             int count = 0;
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < N; i++)
             {
-                for (int j = 0; j < n; j++)
+                for (int j = 0; j < N; j++)
                 {
                     if (matrix[i, j] % 2 != 0)
+                    {
                         count++;
-              } 
+                    }
+                }
             }
+
             return count;
         }
     }
